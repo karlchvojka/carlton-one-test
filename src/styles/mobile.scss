@@ -120,6 +120,41 @@
         }
       }
     }
+    .newsfeedWrap {
+      padding:30px;
+
+      .titleRow {
+        border-bottom:1px solid #f2f3f6;
+        padding-bottom:30px;
+        margin-bottom:30px;
+        
+        div {
+          display:flex;
+          align-items: flex-end;
+
+          h2 {
+            font-size:30px;
+            color:$green;
+            letter-spacing:2px;
+            margin-bottom:0px;
+          }
+
+          p {
+            color:#404248;
+            font-family: $headerFont;
+            font-weight:500;
+            font-size:14px;
+            text-align:right;
+            text-transform:uppercase;
+            letter-spacing:2px;
+            margin-bottom:7px;
+          }
+        }
+        div:last-child {
+          justify-content: flex-end;
+        }
+      }
+    }
   }
 }
 /* END HOMEPAGE STYLES */

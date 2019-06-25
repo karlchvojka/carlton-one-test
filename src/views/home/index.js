@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Profile from './profile/';
+import Newsfeed from './newsfeed/'
 
 function Home() {
   return (
@@ -12,8 +13,7 @@ function Home() {
           <Profile />
         </Col>
         <Col xl={6}>
-          <div className="colInner">
-          </div>
+          <Newsfeed />
         </Col>
         <Col xl={3}>
           <div className="colInner">
