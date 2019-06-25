@@ -11,17 +11,28 @@
     img.previousArro {
       display: block;
       padding:18px;
-      border:1px solid #ffffff;
+      border:1px solid $white;
     }
 
     img.nextArrow {
       display: block;
       padding:18px;
-      border:1px solid #ffffff;
+      border:1px solid $white;
     }
   }
   .carousel-control-next, .carousel-control-prev {
-    width: 10%;
+    width: 7%;
+  }
+  .carousel-caption {
+    width: 35%;
+    left: 11.5%;
+    text-align: left;
+    bottom: 21%;
+
+    p {
+      color: $white;
+      font-size:18px;
+    }
   }
 }
 /* END SLIDER STYLES */

@@ -29,6 +29,10 @@ class Slider extends Component {
             src={SliderImg}
             alt="Third slide"
           />
+          <Carousel.Caption>
+            <h2>Welcome to the company employee rewards program</h2>
+            <p>Our exclusive appreciation program is designed to recognize and reward the ongoing support and commitment of our valued employees.</p>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -36,6 +40,10 @@ class Slider extends Component {
             src={SliderImg}
             alt="Third slide"
           />
+          <Carousel.Caption>
+            <h2>Welcome to the company employee rewards program</h2>
+            <p>Our exclusive appreciation program is designed to recognize and reward the ongoing support and commitment of our valued employees.</p>
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     );
