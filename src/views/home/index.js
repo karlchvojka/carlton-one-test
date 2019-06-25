@@ -5,9 +5,9 @@ import Col from 'react-bootstrap/Col';
 
 function Home() {
   return (
-    <div className="Home">
+    <Container className="home">
       <h1>Home</h1>
-    </div>
+    </Container>
   );
 }
 
