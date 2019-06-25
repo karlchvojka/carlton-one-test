@@ -120,6 +120,112 @@
         }
       }
     }
+    .newsfeedWrap {
+      padding:30px;
+      -webkit-box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.5);
+      box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.5);
+
+      .titleRow {
+        border-bottom:1px solid #f2f3f6;
+        padding-bottom:30px;
+        margin-bottom:30px;
+
+        div {
+          display:flex;
+          align-items: flex-end;
+
+          h2 {
+            font-size:30px;
+            color:$green;
+            letter-spacing:2px;
+            margin-bottom:0px;
+          }
+
+          p {
+            color:#404248;
+            font-family: $headerFont;
+            font-weight:500;
+            font-size:14px;
+            text-align:right;
+            text-transform:uppercase;
+            letter-spacing:2px;
+            margin-bottom:7px;
+          }
+        }
+        div:last-child {
+          justify-content: flex-end;
+        }
+      }
+      .newsItemWrap {
+        h3 {
+          font-family: $paraFont;
+          font-size:18px;
+          color:#1d1f24;
+          font-weight:500;
+          text-transform:none;
+        }
+        h4 {
+          font-family: $paraFont;
+          font-size:14px;
+          color: rgba(29, 31, 36, 0.4);
+          font-weight:400;
+          text-transform:none;
+        }
+        p.commentText {
+          font-family: $paraFont;
+          font-size:14px;
+          color: rgba(29, 31, 36, 0.7);
+          font-weight:400;
+          text-transform:none;
+        }
+        .trophyIcon {
+          margin:0 auto;
+          display:block;
+        }
+        .likesComments {
+          p {
+            font-size:12px;
+            display:flex;
+
+            img {
+              margin-left:18px;
+              margin-right:5px;
+              height:18px;
+              width:18px;
+            }
+            img:first-child {
+              margin-left:0px;
+            }
+            img.speechBubble {
+              margin-top:5px;
+              height:15px;
+            }
+            span {
+              margin-top:3px;
+            }
+          }
+        }
+      }
+    }
+    .viewAllWrap {
+
+      a:link, a:visited {
+        background-color:$green;
+        color:$white;
+        display:block;
+        text-align:center;
+        padding:15px 0px;
+        font-family:$headerFont;
+        text-transform:uppercase;
+        letter-spacing: 2px;
+        font-size:14px;
+        font-weight:500;
+      }
+      a:hover {
+        text-decoration:none;
+      }
+    }
   }
 }
 /* END HOMEPAGE STYLES */
