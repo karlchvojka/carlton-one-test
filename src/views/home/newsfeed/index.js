@@ -6,6 +6,8 @@ import Col from 'react-bootstrap/Col';
 
 import NewsfeedArrow from '../assets/newsfeedarrow.png';
 
+import NewsItem from './newsItem/';
+
 class Newsfeed extends Component {
   render() {
     return (
@@ -18,6 +20,7 @@ class Newsfeed extends Component {
             <p>All Newsfeed Items <img src={NewsfeedArrow} alt="Arrow" /></p>
           </Col>
         </Row>
+        <NewsItem />
       </Container>
     );
   }
