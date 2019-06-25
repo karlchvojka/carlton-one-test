@@ -1,0 +1,27 @@
+/* GLOBAL STYLES */
+
+  /* Font Styles */
+  /* End Font Styles */
+
+/* END GLOBAL STYLES */
+
+/* SLIDER STYLES */
+.carousel {
+  a {
+    img.previousArro {
+      display: block;
+      padding:18px;
+      border:1px solid #ffffff;
+    }
+
+    img.nextArrow {
+      display: block;
+      padding:18px;
+      border:1px solid #ffffff;
+    }
+  }
+  .carousel-control-next, .carousel-control-prev {
+    width: 10%;
+  }
+}
+/* END SLIDER STYLES */
