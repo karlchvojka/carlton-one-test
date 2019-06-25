@@ -1,0 +1,22 @@
+/* FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:400,500&display=swap');
+
+/* END FONT IMPORTS */
+
+/* START VARIABLES */
+$headerFont: 'Oswald', sans-serif;
+$paraFont: 'Lato', sans-serif;
+
+/* END VARIABLES */
+
+/* GLOBAL STYLES */
+
+/* END GLOBAL STYLES */
+
+/* START MEDIAQUERY IMPORTS */
+@import './styles/mobile.scss';
+@import './styles/sm.scss';
+@import './styles/md.scss';
+@import './styles/large.scss';
+@import './styles/xl.scss';
+/* END MEDIAQUERY IMPORTS */
