@@ -11,6 +11,7 @@ class Slider extends Component {
         indicators={false}
         nextIcon={<img className="nextArrow" alt="Next Arrow" src={NextIcon} />}
         prevIcon={<img className="previousArro" alt="Previous Arrow" src={PrevIcon} />}
+        slide={false}
       >
         <Carousel.Item>
           <img
