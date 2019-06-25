@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import SliderImg from "../assets/sliderImage.jpg"
+import SliderImg from "../assets/sliderImage.jpg";
+import PrevIcon from '../assets/prevArrow.png';
+import NextIcon from '../assets/nextArrow.png';
 
 class Slider extends Component {
   render() {
     return (
-      <Carousel indicators={false}>
+      <Carousel
+        indicators={false}
+        nextIcon={<img className="nextArrow" alt="Next Arrow" src={NextIcon} />}
+        prevIcon={<img className="previousArro" alt="Previous Arrow" src={PrevIcon} />}
+      >
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -13,8 +19,8 @@ class Slider extends Component {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h2>Welcome to the company employee rewards program</h2>
+            <p>Our exclusive appreciation program is designed to recognize and reward the ongoing support and commitment of our valued employees.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -23,10 +29,9 @@ class Slider extends Component {
             src={SliderImg}
             alt="Third slide"
           />
-
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2>Welcome to the company employee rewards program</h2>
+            <p>Our exclusive appreciation program is designed to recognize and reward the ongoing support and commitment of our valued employees.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -35,10 +40,9 @@ class Slider extends Component {
             src={SliderImg}
             alt="Third slide"
           />
-
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h2>Welcome to the company employee rewards program</h2>
+            <p>Our exclusive appreciation program is designed to recognize and reward the ongoing support and commitment of our valued employees.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

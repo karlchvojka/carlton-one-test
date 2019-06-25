@@ -7,9 +7,37 @@
 $headerFont: 'Oswald', sans-serif;
 $paraFont: 'Lato', sans-serif;
 
+$greenColor: #72c437;
+$white: #ffffff;
+
 /* END VARIABLES */
 
 /* GLOBAL STYLES */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headerFont;
+  text-transform:uppercase;
+}
+h1 {
+
+}
+h2 {
+  font-size:40px;
+  font-weight: 500;
+  margin-bottom:20px;
+  line-height:49px;
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+
+p {
+  font-family: $paraFont;
+}
 
 /* END GLOBAL STYLES */
 

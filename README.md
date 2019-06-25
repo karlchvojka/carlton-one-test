@@ -33,3 +33,4 @@ Visit `http://localhost:3000/`
 
 - Node 12.4.x or above
 - NPM 6.9.x or above
+- React Bootstrap 1.0.x or above
