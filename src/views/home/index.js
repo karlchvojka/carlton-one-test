@@ -102,10 +102,10 @@ class Home extends Component {
     return (
       <Container as='section' className="home" fluid={true}>
         <Row className="mainHomeView">
-          <Col xl={3}>
+          <Col xl={3} lg={4} md={12} sm={12} xs={12}>
             <Profile user={this.state.userProfile} />
           </Col>
-          <Col xl={6}>
+          <Col xl={6} lg={8} md={12} sm={12} xs={12}>
             <Newsfeed />
             <Row className="viewAllWrap" noGutters={true}>
               <Col xl={12} lg={12} md={12} sm={12} xs={12}>
@@ -113,8 +113,8 @@ class Home extends Component {
               </Col>
             </Row>
           </Col>
-          <Col xl={3}>
-            <Sidebar items={sidebarItems} />
+          <Col xl={3} lg={12} md={12} sm={12} xs={12}>
+              <Sidebar items={sidebarItems} />
           </Col>
         </Row>
         <Resources items={resourceItems} />

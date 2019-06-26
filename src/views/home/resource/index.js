@@ -13,7 +13,7 @@ class Resources extends Component {
 
   render() {
     return (
-      <Row as='section' className="sidebarWrap">
+      <Row as='section' className="resourceWrap">
         {this.state.resourceItems.map((item) => {
           return(
             <ResourceItem key={item.id} category={item.category} image={item.image} title={item.title} body={item.body} />
