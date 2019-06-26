@@ -101,7 +101,7 @@ class Home extends Component {
 
     return (
       <Container as='section' className="home" fluid={true}>
-        <Row>
+        <Row className="mainHomeView">
           <Col xl={3}>
             <Profile user={this.state.userProfile} />
           </Col>
