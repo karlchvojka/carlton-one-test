@@ -10,28 +10,41 @@
   a {
     img.previousArro {
       display: block;
-      padding:18px;
       border:1px solid $white;
+      padding: 10px;
     }
 
     img.nextArrow {
       display: block;
-      padding:18px;
       border:1px solid $white;
+      padding:10px;
     }
   }
   .carousel-control-next, .carousel-control-prev {
-    width: 7%;
+    width: 10%;
+  }
+  .carousel-item {
+    height:200px;
+
+    img {
+      height:200px;
+      width: auto;
+    }
   }
   .carousel-caption {
-    width: 35%;
+    width: 85%;
     left: 11.5%;
     text-align: left;
     bottom: 21%;
 
+    h2 {
+      font-size:25px;
+      margin-bottom:10px;
+      line-height:27px;
+    }
     p {
+      line-height:16px;
       color: $white;
-      font-size:18px;
     }
   }
 }
@@ -40,79 +53,69 @@
 /* HOMEPAGE STYLES */
 .home {
   position:relative;
-  top:-50px;
+  top:0px;
+
   .mainHomeView {
     margin-bottom:30px;
-    
+
     .colInner {
       background-color:$white;
-      -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
-      -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
-      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
     }
     .profileWrap {
-      padding:0 50px;
-
+      margin-bottom: 20px;
       .imageWrap {
         position:relative;
         top:-50px;
+
         div {
           display:flex;
           justify-content:center;
-          margin-bottom:-30px;
-
-
-        }
-        img.profileImg {
-          width:132px;
-          height:132px;
+          margin-bottom: -30px;
         }
       }
       .profileDetails {
         h3 {
           color: rgba(29, 31, 36, 0.5);
           font-family: $paraFont;
-          font-size: 24px;
           font-weight: 400;
           text-transform: none;
           text-align:center;
-          width:75%;
-          margin:0 auto 15px auto;
+          width:100%;
         }
         h4 {
+          font-size:40px;
           color:$green;
-          font-size:48px;
           text-align:center;
         }
         p {
           color: rgba(29, 31, 36, 0.4);
-          font-size:12px;
           text-align:center;
           text-transform:uppercase;
-          letter-spacing:3px;
-          margin-bottom: 40px;
         }
       }
       .profileOptions {
         ul {
           list-style:none;
-          padding-left:0px;
           margin-bottom:50px;
 
           li {
-            padding:20px 25px;
             border-top:1px solid #f2f3f6;
+            padding:20px 25px;
 
             p {
               margin-bottom:0px;
               font-family: $headerFont;
               text-transform:uppercase;
-              font-size:14px;
               font-weight:500;
-
-              img {
-                margin-right:20px;
-              }
+              color:#404248;
+              letter-spacing:1px;
+              text-align:center;
+            }
+            img {
+              margin-right:20px;
             }
           }
           li:last-child {
@@ -122,22 +125,19 @@
       }
     }
     .newsfeedWrap {
-      padding:30px;
-      -webkit-box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.5);
-      -moz-box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.5);
-      box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.1);
+      box-shadow: 0px 55px 15px 0px rgba(0,0,0,0.1);
 
       .titleRow {
         border-bottom:1px solid #f2f3f6;
-        padding-bottom:30px;
-        margin-bottom:30px;
-
+        padding-bottom:20px;
+        margin-bottom:20px;
         div {
           display:flex;
           align-items: flex-end;
 
           h2 {
-            font-size:30px;
             color:$green;
             letter-spacing:2px;
             margin-bottom:0px;
@@ -147,11 +147,9 @@
             color:#404248;
             font-family: $headerFont;
             font-weight:500;
-            font-size:14px;
             text-align:right;
             text-transform:uppercase;
             letter-spacing:2px;
-            margin-bottom:7px;
           }
         }
         div:last-child {
@@ -159,26 +157,30 @@
         }
       }
       .newsItemWrap {
+        border-bottom: 1px solid #f2f3f6;
+        padding-bottom:20px;
+        margin-bottom:20px;
+
         h3 {
           font-family: $paraFont;
-          font-size:18px;
           color:#1d1f24;
           font-weight:500;
           text-transform:none;
+          font-size:18px;
         }
         h4 {
           font-family: $paraFont;
-          font-size:14px;
           color: rgba(29, 31, 36, 0.4);
           font-weight:400;
           text-transform:none;
+          font-size:14px;
         }
         p.commentText {
           font-family: $paraFont;
-          font-size:14px;
           color: rgba(29, 31, 36, 0.7);
           font-weight:400;
           text-transform:none;
+          font-size:14px;
         }
         .trophyIcon {
           margin:0 auto;
@@ -186,42 +188,39 @@
         }
         .likesComments {
           p {
-            font-size:12px;
             display:flex;
+            margin-bottom:0px;
 
-            img {
-              margin-left:18px;
-              margin-right:5px;
-              height:18px;
-              width:18px;
-            }
             img:first-child {
               margin-left:0px;
             }
-            img.speechBubble {
-              margin-top:5px;
-              height:15px;
-            }
-            span {
-              margin-top:3px;
+            img {
+              margin-left:18px;
+              margin-right:5px;
+              width:18px;
+              height:18px;
             }
           }
         }
       }
+      .newsItemWrap:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+      }
     }
     .viewAllWrap {
+      margin-bottom:30px;
+      padding: 0px;
 
       a:link, a:visited {
         background-color:$green;
         color:$white;
         display:block;
         text-align:center;
-        padding:15px 0px;
         font-family:$headerFont;
         text-transform:uppercase;
-        letter-spacing: 2px;
-        font-size:14px;
         font-weight:500;
+        padding:15px 0px;
       }
       a:hover {
         text-decoration:none;
@@ -234,40 +233,49 @@
   }
   .sidebarItemWrap {
     margin-bottom:30px;
+
     .imgWrap {
       position:relative;
       .category {
         position: absolute;
-        top:30px;
         display:block;
-        padding: 15px 30px;
         background-color:$green;
         font-family:$headerFont;
         color:$white;
         text-transform:uppercase;
         font-weight:500;
+        top:30px;
+        padding: 11px 30px;
         letter-spacing:1px;
         font-size: 14px;
+        width:140px;
       }
       img {
         width:100%;
       }
     }
     .itemText {
-      padding:20px;
+      padding:20px 20px 15px 20px;
 
       h3 {
         font-family:$paraFont;
-        font-size:18px;
         text-transform: none;
-        margin-bottom:15px;
+        color:#1d1f24;
+        font-size:18px;
       }
       p {
-        color:rgba(29, 31, 36, 0.6);
         font-size:14px;
         line-height:16px;
         margin-bottom:0px;
+        color:rgba(29, 31, 36, 0.6);
       }
+    }
+  }
+  .resourceWrap {
+    .sidebarItemWrap {
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
     }
   }
 }

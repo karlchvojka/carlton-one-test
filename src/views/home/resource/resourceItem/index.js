@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 class ResourceItem extends Component {
   render() {
     return (
-      <Col xs={3} >
+      <Col xl={3} lg={6} md={6} sm={6} xs={12} >
         <Row noGutters={true} >
           <Col className="sidebarItemWrap colInner">
             <Row className="imgWrap" noGutters={true}>
