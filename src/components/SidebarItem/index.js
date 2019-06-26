@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 class SidebarItem extends Component {
   render() {
     return (
-        <Col className="sidebarItemWrap" xl={12} lg={6} md={12} sm={12} xs={12}>
+        <Col className="sidebarItemWrap" xl={12} lg={6} md={6} sm={12} xs={12}>
           <div className="colInner">
             <Row className="imgWrap" noGutters={true}>
               <p className="category">{this.props.category}</p>

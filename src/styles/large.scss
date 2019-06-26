@@ -10,7 +10,19 @@
         padding:18px;
       }
     }
+    .carousel-control-next, .carousel-control-prev {
+      width: 7%;
+    }
+    .carousel-item {
+      height:auto;
+
+      img {
+        height:auto;
+        width: auto;
+      }
+    }
     .carousel-caption {
+      width: 35%;
       p {
         color: $white;
       }
@@ -20,6 +32,7 @@
 
   /* HOMEPAGE STYLES */
   .home {
+    top:-50px;
     .mainHomeView {
       margin-bottom:30px;
 
@@ -40,6 +53,7 @@
           h3 {
             font-size: 24px;
             margin:0 auto 15px auto;
+            width:75%;
           }
           h4 {
             font-size:48px;

@@ -10,9 +10,27 @@
         padding:18px;
       }
     }
+    .carousel-control-next, .carousel-control-prev {
+      width: 7%;
+    }
+    .carousel-item {
+      height: auto;
+
+      img {
+        height: auto;
+      }
+    }
     .carousel-caption {
+      width: 50%;
+      bottom: 21%;
       p {
+        font-size:18px;
+        line-height:26px;
         color: $white;
+      }
+      h2 {
+        font-size:40px;
+        line-height:49px;
       }
     }
   }
@@ -20,11 +38,12 @@
 
   /* HOMEPAGE STYLES */
   .home {
+    top:-50px;
     .mainHomeView {
       margin-bottom:30px;
 
       .profileWrap {
-        padding:0 50px;
+        padding:0 30px;
 
         .imageWrap {
 
@@ -40,6 +59,7 @@
           h3 {
             font-size: 24px;
             margin:0 auto 15px auto;
+            width:75%;
           }
           h4 {
             font-size:48px;
@@ -182,10 +202,19 @@
         padding:18px;
       }
     }
+    .carousel-control-next, .carousel-control-prev {
+      width: 7%;
+    }
+    .carousel-item {
+      height: auto;
+    }
     .carousel-caption {
-
+      width: 35%;
       p {
         color: $white;
+      }
+      img {
+        height: auto;
       }
     }
   }
@@ -193,6 +222,8 @@
 
   /* HOMEPAGE STYLES */
   .home {
+    top:-50px;
+
     .mainHomeView {
       margin-bottom:30px;
 
@@ -213,6 +244,7 @@
           h3 {
             font-size: 24px;
             margin:0 auto 15px auto;
+            width:75%;
           }
           h4 {
             font-size:48px;
@@ -236,7 +268,7 @@
               }
               img {
                 margin-right:20px;
-                width:auto;
+                width:34px;
               }
             }
           }
@@ -303,7 +335,7 @@
       .viewAllWrap {
 
         a:link, a:visited {
-          padding:15px 0px;
+          padding:11px 0px;
           letter-spacing: 2px;
           font-size:14px;
         }
