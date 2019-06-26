@@ -9,21 +9,14 @@ class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sidebarItems: [
-        {
-          id: 0,
-          category: 'Resources',
-          image: './assets/myHrCloud.jpg',
-          title: 'My HR Cloud',
-          body: 'Sed ut perspiciatis omnis iste natus error sit voluptatem accusantium'
-        }
-      ]
+      sidebarItems: this.props.items
     }
   }
 
   render() {
+
     return (
-      <Container as='section' className="sidebarWrap">
+      <Container as='section' className="sidebarWrap" fluid={true}>
         {this.state.sidebarItems.map((item) => {
           return(
             <SidebarItem key={item.id} category={item.category} image={item.image} title={item.title} body={item.body} />

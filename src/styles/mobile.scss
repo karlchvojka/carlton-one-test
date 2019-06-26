@@ -226,6 +226,48 @@
         text-decoration:none;
       }
     }
+    .sidebarWrap {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .sidebarItemWrap {
+    margin-bottom:30px;
+    .imgWrap {
+      position:relative;
+      .category {
+        position: absolute;
+        top:30px;
+        display:block;
+        padding: 15px 30px;
+        background-color:$green;
+        font-family:$headerFont;
+        color:$white;
+        text-transform:uppercase;
+        font-weight:500;
+        letter-spacing:1px;
+        font-size: 14px;
+      }
+      img {
+        width:100%;
+      }
+    }
+    .itemText {
+      padding:20px;
+
+      h3 {
+        font-family:$paraFont;
+        font-size:18px;
+        text-transform: none;
+        margin-bottom:15px;
+      }
+      p {
+        color:rgba(29, 31, 36, 0.6);
+        font-size:14px;
+        line-height:16px;
+        margin-bottom:0px;
+      }
+    }
   }
 }
 /* END HOMEPAGE STYLES */

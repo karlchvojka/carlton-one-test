@@ -6,11 +6,17 @@ import Col from 'react-bootstrap/Col';
 class SidebarItem extends Component {
   render() {
     return (
-      <Row className="colInner">
-        <p>{this.props.category}</p>
-        <img src={this.props.image} />
-        <p>{this.props.title}</p>
-        <p>{this.props.body}</p>
+      <Row className="colInner sidebarItemWrap" noGutters={true}>
+        <Col>
+          <Row className="imgWrap" noGutters={true}>
+            <p className="category">{this.props.category}</p>
+            <img src={this.props.image} />
+          </Row>
+          <Row className="itemText" noGutters={true}>
+            <h3>{this.props.title}</h3>
+            <p>{this.props.body}</p>
+          </Row>
+        </Col>
       </Row>
     );
   }
