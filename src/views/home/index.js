@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -54,8 +56,20 @@ class Home extends Component {
           title: '2018 Galla Awards',
           body: 'Sed ut perspiciatis omnis iste natus error sit voluptatem accusantium'
         }
-      ]
+      ],
+      userProfile: []
     }
+  }
+
+  componentDidMount() {
+    axios.get('https://cors-anywhere.herokuapp.com/https://s3-us-west-1.amazonaws.com/gcodes-ext-logos/dev+test/member.json')
+    .then(res => {
+      const userProfile = res.data;
+      this.setState({ userProfile });
+    })
+    .catch((error) => {
+      console.log(error)
+    })
   }
 
 
@@ -87,9 +101,9 @@ class Home extends Component {
 
     return (
       <Container as='section' className="home" fluid={true}>
-        <Row>
+        <Row className="mainHomeView">
           <Col xl={3}>
-            <Profile />
+            <Profile user={this.state.userProfile} />
           </Col>
           <Col xl={6}>
             <Newsfeed />
