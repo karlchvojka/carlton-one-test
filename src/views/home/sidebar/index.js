@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 import SidebarItem from '../../../components/SidebarItem/'
 
@@ -14,13 +14,13 @@ class Sidebar extends Component {
   render() {
 
     return (
-      <Container as='section' className="sidebarWrap" fluid={true}>
+      <Row as='section' className="sidebarWrap">
         {this.state.sidebarItems.map((item) => {
           return(
             <SidebarItem key={item.id} category={item.category} image={item.image} title={item.title} body={item.body} />
           )
         })}
-      </Container>
+      </Row>
     );
   }
 }

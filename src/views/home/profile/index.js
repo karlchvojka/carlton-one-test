@@ -10,6 +10,7 @@ import CrownIcon from '../assets/crownIcon.png';
 
 class Profile extends Component {
   render() {
+
     return (
       <Container as='section' className="colInner profileWrap">
         <Row className="imageWrap">
@@ -20,7 +21,7 @@ class Profile extends Component {
         <Row className="profileDetails">
           <Col xl={12} lg={12} md={12} sm={12} xs={12}>
             <h3>{this.props.user.first_name} {this.props.user.last_name}</h3>
-            <h4>{this.props.user.points}</h4>
+            <h4>{new Intl.NumberFormat().format(this.props.user.points)}</h4>
             <p>Points Available</p>
           </Col>
         </Row>
